@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name ="author" content="s.houmadi"/>
+    <meta name ="description" content="Tage bloc"/>
+	<!-- Font -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="css/1.css">
+	<title>PR</title>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Logo</a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Work</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="img/stars.png" id="stars">
+		<img src="img/moon.png" id="moon">
+		<h2 id="text">Moon Light</h2>
+		<a href="#sec" id="btn">Explore</a>
+		<img src="img/mountains_behind.png" id="mountains_behind">
+		<img src="img/mountains_front.png" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+    	<h2>Parellax Scrolling Effects</h2>
+    	<p>Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.</br></br>Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.</br></br>Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.</br></br>Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.</br></br>Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.Welcome to Flask’s documentation. Get started with Installation and then get an overview with the Quickstart. There is also a more detailed Tutorial that shows how to create a small but complete application with Flask. Common patterns are described in the Patterns for Flask section. The rest of the docs describe each component of Flask in detail, with a full reference in the API section.</p>
+    	
+    </div>
+    <script type="text/javascript">
+    	let stars = document.getElementById('stars');
+    	let moon = document.getElementById('moon');
+    	let mountains_behind = document.getElementById('mountains_behind');
+    	let text = document.getElementById('text');
+    	let btn = document.getElementById('btn');
+    	let mountains_front = document.getElementById('mountains_front');
+    	let header = document.querySelector('header');
+
+    	window.addEventListener('scroll', function(){
+    		let value = window.scrollY;
+    		stars.style.left = value * 0.25 + 'px';
+    		moon.style.top = value * 1.05 + 'px';
+    		mountains_behind.style.top= value * 0.5 + 'px';
+    		mountains_front.style.top = value * 0 + 'px';
+
+    		btn.style.marginTop = value * 1.5 + 'px';
+    		header.style.top = value * 0.5 + 'px';
+    	})
+    	
+    </script>
+    <!-- Footer -->
+			<footer class="social-icons">  
+                    <!-- Social -->
+   	                <a href="#"><i class="fab fa-facebook-f"></i></a>
+   	                <a href="#"><i class="fab fa-instagram"></i></a>
+   	                <a href="#"><i class="fab fa-twitter"></i></a>
+   	                <a href="#"><i class="fab fa-youtube"></i></a>
+   	                <a href="#"><i class="fab fa-pinterest"></i></a>
+   	                <a href="#"><i class="fab fa-telegram"></i></a>
+   	                <a href="#"><i class="fab fa-flickr"></i></a>
+  		    
+  		    </footer>
+
+
+</body>
+</html>
